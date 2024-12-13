@@ -20,6 +20,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - React
 - SASS
 - Semantic HTML5 markup
+- Typescript
 - Vite
 
 ## Author
