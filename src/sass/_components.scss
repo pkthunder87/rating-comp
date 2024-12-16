@@ -1,0 +1,36 @@
+/* ===========================
+   ToC 
+
+   1.0 Phones 0 - 549px 
+   1.1 Results
+   =========================== */
+
+/* =================
+   Custom Properties
+   ================= */
+
+:root {
+  // Colors
+
+  --color-green: 75deg, 94%, 57%;
+
+  --color-white: 0deg, 0%, 100%;
+
+  --color-grey-700: 0deg, 0%, 20%;
+  --color-grey-800: 0deg, 0%, 12%;
+  --color-grey-900: 0deg, 0%, 8%;
+}
+
+/* =================
+   Mixins
+   ================= */
+
+// Grid w/borders from https://geary.co/internal-borders-css-grid/
+
+/* ==============================
+   1.0 Phones & Tablets 0 - 900px 
+   ============================== */
+
+.text {
+  color: white;
+}
