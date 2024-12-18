@@ -12,13 +12,11 @@
 :root {
   // Colors
 
-  --color-green: 75deg, 94%, 57%;
+  --color-orange: 25deg, 97%, 53%;
 
-  --color-white: 0deg, 0%, 100%;
-
-  --color-grey-700: 0deg, 0%, 20%;
-  --color-grey-800: 0deg, 0%, 12%;
-  --color-grey-900: 0deg, 0%, 8%;
+  --color-grey: 217deg, 12%, 63%;
+  --color-dark-blue: 213deg, 19%, 18%;
+  --color-very-dark-blue: 216deg, 12%, 8%;
 }
 
 /* =================
@@ -30,8 +28,17 @@
 /* ==============================
    1.0 Phones & Tablets 0 - 900px 
    ============================== */
+.layout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .text {
+  border-radius: 14px;
+  background-color: hsl(var(--color-dark-blue));
   color: white;
-  font-size: 4rem;
+  font-size: 2rem;
+  width: 50%;
 }

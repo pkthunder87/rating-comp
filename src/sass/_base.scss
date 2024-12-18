@@ -15,14 +15,11 @@
 :root {
   // Colors
 
-  --color-green: 75deg, 94%, 57%;
+  --color-orange: 25deg, 97%, 53%;
 
-  --color-white: 0deg, 0%, 100%;
-
-  --color-grey-700: 0deg, 0%, 20%;
-  --color-grey-800: 0deg, 0%, 12%;
-  --color-grey-900: 0deg, 0%, 8%;
-  --color-grey-1000: 0deg, 0%, 6%;
+  --color-grey: 217deg, 12%, 63%;
+  --color-dark-blue: 213deg, 19%, 18%;
+  --color-very-dark-blue: 216deg, 12%, 8%;
 }
 
 /* =============
@@ -71,20 +68,7 @@ body {
   font-size: 1.4rem;
 
   color: hsl(var(--color-white));
-  background-color: hsl(var(--color-grey-1000));
-}
-
-.site-links:link,
-.site-links:visited {
-  text-decoration: none;
-  color: hsl(var(--color-white));
-}
-
-.site-links:active,
-.site-links:hover {
-  color: hsl(var(--color-grey-800));
-  background-color: hsl(var(--color-green));
-  cursor: url("./assets/images/icons8-cursor-18.png"), auto;
+  background-color: hsl(var(--color-very-dark-blue));
 }
 
 /* Make images easier to work with */
