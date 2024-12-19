@@ -38,36 +38,8 @@
    ============= */
 
 .app-layout {
-  &__outer {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-
-    min-height: 100vh;
-    background-color: hsl(var(--color-grey-900));
-  }
-
-  &__inner {
-    border-radius: 12px;
-    margin: auto 0;
-
-    background-color: hsl(var(--color-grey-800));
-    padding-inline: 2.5rem;
-    width: 88%;
-    height: 100%;
-
-    @media (min-width: 501px) {
-      width: 60%;
-    }
-
-    @media (min-width: 701px) {
-      width: 40%;
-    }
-
-    @media (min-width: 901px) {
-      width: 30%;
-      height: 70%;
-    }
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
