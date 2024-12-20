@@ -10,6 +10,17 @@
    1.0 Phones 0 - 549px 
    =================== */
 
+:root {
+  // Colors
+
+  --color-orange: 25deg, 97%, 53%;
+
+  --color-grey: 217deg, 12%, 63%;
+  --color-dark-blue: 213deg, 19%, 18%;
+  --color-very-dark-blue: 216deg, 12%, 8%;
+  --color-white: 0deg, 0%, 100%;
+}
+
 /* =============
    1.1 Footer 
    ============= */
@@ -17,20 +28,20 @@
 .attribution {
   font-size: 1.4rem;
   text-align: center;
+  color: hsl(var(--color-white));
 
   text-wrap: balance;
-  margin-block-start: -8.5rem;
+  margin-block-start: 5rem;
 
   @media (min-width: 400px) {
-    margin-block-start: -2.5rem;
   }
 
   @media (min-width: 830px) {
-    margin-block-start: -1.5rem;
   }
 }
+
 .attribution a {
-  color: hsl(var(--color-green));
+  color: hsl(var(--color-orange));
 }
 
 /* =============
