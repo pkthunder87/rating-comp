@@ -6,13 +6,26 @@ function App() {
   return (
     <div>
       <AppLayout>
-        <p className="text">
-          How did we do? Please let us know how we did with your support
-          request. All feedback is appreciated to help us improve our offering!
-          1 2 3 4 5 Submit You selected Thank you! We appreciate you taking the
-          time to give a rating. If you ever need more support, don’t hesitate
-          to get in touch!
-        </p>
+        <div className="rating">
+          <img
+            className="rating__img"
+            src="./assets/images/icon-star.svg"
+            alt="gold star"
+          />
+          <h1 className="rating__title">How did we do? </h1>
+          <p className="rating__text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div className="rating__score">
+            <div className="icon-circle">1</div>
+            <div className="icon-circle">2</div>
+            <div className="icon-circle">3</div>
+            <div className="icon-circle">4</div>
+            <div className="icon-circle">5</div>
+          </div>
+          <div className="rating__cta">Submit</div>
+        </div>
       </AppLayout>
       <Attribution />
     </div>
