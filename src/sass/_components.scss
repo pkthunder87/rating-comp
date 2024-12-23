@@ -31,9 +31,32 @@
    ============================== */
 
 .rating {
+  display: flex;
+  flex-direction: column;
   border-radius: 14px;
   background-color: hsl(var(--color-dark-blue));
   color: white;
   font-size: 2rem;
   width: 50%;
+
+  &__img {
+    height: 20px;
+    width: 20px;
+  }
+
+  &__cta {
+    display: flex;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: hsl(var(--color-dark-blue));
+    justify-content: center;
+    border-radius: 100px;
+    width: 50%;
+    padding: 1rem;
+    padding-block-start: 1.5rem;
+    background-color: hsl(var(--color-orange));
+    margin-left: 0 auto;
+    align-self: center;
+  }
 }
