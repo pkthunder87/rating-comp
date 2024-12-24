@@ -7,11 +7,14 @@ function App() {
     <div>
       <AppLayout>
         <div className="rating">
-          <img
-            className="rating__img"
-            src="./assets/images/icon-star.svg"
-            alt="gold star"
-          />
+          <div className="icon-circle">
+            <img
+              className="rating__img"
+              src="./assets/images/icon-star.svg"
+              alt="gold star"
+            />
+          </div>
+
           <h1 className="rating__title">How did we do? </h1>
           <p className="rating__text">
             Please let us know how we did with your support request. All

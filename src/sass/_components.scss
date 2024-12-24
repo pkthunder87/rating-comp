@@ -15,7 +15,8 @@
   --color-orange: 25deg, 97%, 53%;
 
   --color-grey: 217deg, 12%, 63%;
-  --color-dark-blue: 213deg, 19%, 18%;
+  --color-bubble: 213deg, 19%, 22%;
+  --color-dark-blue: 213deg, 19%, 15%;
   --color-very-dark-blue: 216deg, 12%, 8%;
   --color-white: 0deg, 0%, 100%;
 }
@@ -35,11 +36,17 @@
   flex-direction: column;
   border-radius: 14px;
   background-color: hsl(var(--color-dark-blue));
-  color: white;
   font-size: 2rem;
+  row-gap: 4rem;
+  padding: 4rem;
   width: 50%;
 
+  &__title {
+    color: hsl(var(--color-white));
+  }
+
   &__img {
+    transform: translateY(-15%);
     height: 20px;
     width: 20px;
   }
@@ -58,5 +65,22 @@
     background-color: hsl(var(--color-orange));
     margin-left: 0 auto;
     align-self: center;
+  }
+
+  &__score {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 0.4rem;
+    border-radius: 100px;
+    height: 5rem;
+    width: 5rem;
+    background-color: hsl(var(--color-bubble));
   }
 }
