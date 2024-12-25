@@ -65,12 +65,26 @@
     background-color: hsl(var(--color-orange));
     margin-left: 0 auto;
     align-self: center;
+
+    &:hover {
+      background-color: hsl(var(--color-white));
+      color: hsl(var(--color-bubble));
+      cursor: pointer;
+    }
   }
 
   &__score {
     display: flex;
 
     justify-content: space-between;
+
+    .icon-circle {
+      &:hover {
+        background-color: hsl(var(--color-orange));
+        color: hsl(var(--color-bubble));
+        cursor: pointer;
+      }
+    }
   }
 
   .icon-circle {
