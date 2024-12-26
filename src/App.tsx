@@ -4,7 +4,7 @@ import Attribution from "./components/Attribution";
 
 function App() {
   return (
-    <div>
+    <div className="wrapper">
       <AppLayout>
         <div className="rating">
           <div className="icon-circle">

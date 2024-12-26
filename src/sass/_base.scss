@@ -71,6 +71,10 @@ body {
 
   color: hsl(var(--color-grey));
   background-color: hsl(var(--color-very-dark-blue));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Make images easier to work with */

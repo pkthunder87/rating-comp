@@ -15,8 +15,8 @@
   --color-orange: 25deg, 97%, 53%;
 
   --color-grey: 217deg, 12%, 63%;
-  --color-bubble: 213deg, 19%, 22%;
-  --color-dark-blue: 213deg, 19%, 15%;
+  --color-bubble: 213deg, 19%, 19%;
+  --color-dark-blue: 213deg, 19%, 13%;
   --color-very-dark-blue: 216deg, 12%, 8%;
   --color-white: 0deg, 0%, 100%;
 }
@@ -34,47 +34,33 @@
 .rating {
   display: flex;
   flex-direction: column;
-  border-radius: 14px;
+  border-radius: 15px;
   background-color: hsl(var(--color-dark-blue));
   font-size: 2rem;
-  row-gap: 4rem;
-  padding: 4rem;
-  width: 50%;
-
-  &__title {
-    color: hsl(var(--color-white));
-  }
+  row-gap: 2rem;
+  padding: 2rem;
 
   &__img {
     transform: translateY(-15%);
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
   }
 
-  &__cta {
-    display: flex;
-    font-weight: 700;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: hsl(var(--color-dark-blue));
-    justify-content: center;
-    border-radius: 100px;
-    width: 50%;
-    padding: 1rem;
-    padding-block-start: 1.5rem;
-    background-color: hsl(var(--color-orange));
-    margin-left: 0 auto;
-    align-self: center;
+  &__title {
+    color: hsl(var(--color-white));
+    font-size: 2.4rem;
+  }
 
-    &:hover {
-      background-color: hsl(var(--color-white));
-      color: hsl(var(--color-bubble));
-      cursor: pointer;
-    }
+  &__text {
+    margin-block-start: -0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.55em;
   }
 
   &__score {
     display: flex;
+    font-size: 1.5rem;
+    margin-block-start: 0.6rem;
 
     justify-content: space-between;
 
@@ -93,8 +79,31 @@
     align-items: center;
     padding-block-start: 0.4rem;
     border-radius: 100px;
-    height: 5rem;
-    width: 5rem;
+    height: 4.1rem;
+    width: 4.1rem;
     background-color: hsl(var(--color-bubble));
+  }
+
+  &__cta {
+    display: flex;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: hsl(var(--color-dark-blue));
+    justify-content: center;
+    border-radius: 100px;
+    width: 100%;
+    padding: 1rem;
+    padding-block-start: 1.5rem;
+    background-color: hsl(var(--color-orange));
+    margin-left: 0 auto;
+    margin-block-end: 1rem;
+    align-self: center;
+
+    &:hover {
+      background-color: hsl(var(--color-white));
+      color: hsl(var(--color-bubble));
+      cursor: pointer;
+    }
   }
 }

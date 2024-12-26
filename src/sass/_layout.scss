@@ -34,6 +34,9 @@
   text-wrap: balance;
   margin-block-start: 5rem;
 
+  position: absolute;
+  left: 18%;
+
   @media (min-width: 400px) {
   }
 
@@ -50,8 +53,8 @@
    ============= */
 
 .app-layout {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-inline: 7%;
 }
