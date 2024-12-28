@@ -18,6 +18,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - Flexbox
 - Grid
 - React
+- React Router
 - SASS
 - Semantic HTML5 markup
 - Typescript
