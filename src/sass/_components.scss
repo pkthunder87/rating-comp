@@ -31,7 +31,7 @@
    1.0 Phones & Tablets 0 - 900px 
    ============================== */
 
-.rating {
+.container {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -39,7 +39,9 @@
   font-size: 2rem;
   row-gap: 2rem;
   padding: 2rem;
+}
 
+.rating {
   &__img {
     transform: translateY(-15%);
     height: 15px;
@@ -105,5 +107,11 @@
       color: hsl(var(--color-bubble));
       cursor: pointer;
     }
+  }
+}
+
+.thanks {
+  &__img {
+    scale: 50%;
   }
 }

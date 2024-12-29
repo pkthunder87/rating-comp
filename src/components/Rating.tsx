@@ -1,6 +1,6 @@
 function Rating() {
   return (
-    <div className="rating">
+    <div className="rating container">
       <div className="icon-circle">
         <img
           className="rating__img"
