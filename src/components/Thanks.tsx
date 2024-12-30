@@ -7,7 +7,7 @@ function Thanks() {
         alt="gold star"
       />
 
-      <p className="thanks__choice">You selected 4 out of 5</p>
+      <p className="thanks__choice icon-circle">You selected 4 out of 5</p>
 
       <h1 className="thanks__title">Thank you!</h1>
       <p className="thanks__text">

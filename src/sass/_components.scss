@@ -111,7 +111,43 @@
 }
 
 .thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   &__img {
-    scale: 50%;
+    margin-block-start: 0.7rem;
+    scale: 88%;
+  }
+
+  &__choice {
+    color: hsl(var(--color-orange));
+    font-size: 1.4rem;
+
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1.5rem;
+    padding-block-start: 0.8rem;
+    padding-block-end: 0.6rem;
+    border-radius: 100px;
+    background-color: hsl(var(--color-bubble));
+  }
+
+  &__title {
+    margin-block-start: 1rem;
+    font-size: 2.3rem;
+
+    color: hsl(var(--color-white));
+  }
+
+  &__text {
+    margin-block-start: -0.9rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.53em;
+    margin-block-end: 1rem;
   }
 }
