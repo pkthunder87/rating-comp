@@ -72,6 +72,11 @@
         color: hsl(var(--color-bubble));
         cursor: pointer;
       }
+
+      &:focus {
+        background-color: hsl(var(--color-white));
+        color: hsl(var(--color-dark-blue));
+      }
     }
   }
 

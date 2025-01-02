@@ -1,4 +1,18 @@
-function Rating() {
+import { Link } from "react-router";
+
+type RatingProps = {
+  setRating: React.Dispatch<React.SetStateAction<number>>;
+  userRating: number;
+};
+
+function Rating({ setRating }: RatingProps) {
+  const handleClick = (event: MouseEvent<HTMLUListElement>) => {
+    const target = event.target as HTMLLIElement;
+    setRating(Number(target.innerText));
+
+    console.log(Number(target.innerText));
+  };
+
   return (
     <div className="rating container">
       <div className="icon-circle">
@@ -15,13 +29,25 @@ function Rating() {
         appreciated to help us improve our offering!
       </p>
       <div className="rating__score">
-        <div className="icon-circle">1</div>
-        <div className="icon-circle">2</div>
-        <div className="icon-circle">3</div>
-        <div className="icon-circle">4</div>
-        <div className="icon-circle">5</div>
+        <button onClick={handleClick} className="icon-circle">
+          1
+        </button>
+        <button className="icon-circle" onClick={handleClick}>
+          2
+        </button>
+        <button className="icon-circle" onClick={handleClick}>
+          3
+        </button>
+        <button className="icon-circle" onClick={handleClick}>
+          4
+        </button>
+        <button className="icon-circle" onClick={handleClick}>
+          5
+        </button>
       </div>
-      <div className="rating__cta">Submit</div>
+      <Link to={"/thanks"} className="rating__cta">
+        Submit
+      </Link>
     </div>
   );
 }
