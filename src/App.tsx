@@ -22,7 +22,7 @@ function App() {
                 <Rating setRating={setUserRating} userRating={userRating} />
               }
             />
-            <Route path="thanks" element={<Thanks />} />
+            <Route path="thanks" element={<Thanks userRating={userRating} />} />
             <Route
               path="*"
               element={

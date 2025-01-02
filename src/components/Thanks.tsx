@@ -1,4 +1,8 @@
-function Thanks() {
+type ThanksProps = {
+  userRating: number;
+};
+
+function Thanks({ userRating }: ThanksProps) {
   return (
     <div className="thanks container">
       <img
@@ -7,7 +11,9 @@ function Thanks() {
         alt="gold star"
       />
 
-      <p className="thanks__choice icon-circle">You selected 4 out of 5</p>
+      <p className="thanks__choice icon-circle">
+        You selected {userRating} out of 5
+      </p>
 
       <h1 className="thanks__title">Thank you!</h1>
       <p className="thanks__text">

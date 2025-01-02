@@ -76,12 +76,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: hsl(var(--color-dark-blue));
-  }
-
   button {
     color: hsl(var(--color-grey));
     border: none;

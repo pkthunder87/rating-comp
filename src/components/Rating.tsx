@@ -1,16 +1,14 @@
 import { Link } from "react-router";
 
 type RatingProps = {
-  setRating: React.Dispatch<React.SetStateAction<number>>;
   userRating: number;
+  setRating: React.Dispatch<React.SetStateAction<number>>;
 };
 
-function Rating({ setRating }: RatingProps) {
+function Rating({ userRating, setRating }: RatingProps) {
   const handleClick = (event: MouseEvent<HTMLUListElement>) => {
     const target = event.target as HTMLLIElement;
     setRating(Number(target.innerText));
-
-    console.log(Number(target.innerText));
   };
 
   return (
@@ -45,8 +43,10 @@ function Rating({ setRating }: RatingProps) {
           5
         </button>
       </div>
-      <Link to={"/thanks"} className="rating__cta">
-        Submit
+      <Link to={"/thanks"}>
+        <button disabled={Boolean(!userRating)} className="rating__cta">
+          Submit
+        </button>
       </Link>
     </div>
   );
