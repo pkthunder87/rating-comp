@@ -37,10 +37,18 @@
   position: absolute;
   left: 18%;
 
-  @media (min-width: 400px) {
+  @media (min-width: 500px) {
+    // left: calc(26% + 2vw);
+    left: 50%;
+    transform: translate(-50%);
   }
 
-  @media (min-width: 830px) {
+  @media (min-width: 600px) {
+    // left: calc(26% + 6vw);
+  }
+
+  @media (min-width: 740px) {
+    // left: calc(26% + 10vw);
   }
 }
 
