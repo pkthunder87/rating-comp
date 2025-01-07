@@ -45,6 +45,15 @@
     row-gap: 2.5rem;
 
     max-width: 500px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 480px;
+    padding-inline-start: 3rem;
+    padding-inline-end: 4rem;
+
+    row-gap: 1.5rem;
   }
 }
 
@@ -65,6 +74,12 @@
       height: 20px;
       width: 20px;
     }
+
+    @media (min-width: 1200px) {
+      transform: translateY(-18%);
+      height: 17px;
+      width: 17px;
+    }
   }
 
   &__title {
@@ -73,6 +88,10 @@
 
     @media (min-width: 500px) {
       font-size: 2.8rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-block-start: 2rem;
     }
   }
 
@@ -83,6 +102,11 @@
 
     @media (min-width: 500px) {
       font-size: 1.6rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.55rem;
+      margin-block-start: -0.5rem;
     }
   }
 
@@ -98,7 +122,15 @@
       margin-block-end: 0.5rem;
     }
 
+    @media (min-width: 1200px) {
+      margin-block-end: 1.8rem;
+    }
+
     .icon-circle {
+      @media (min-width: 1200px) {
+        font-weight: 700;
+      }
+
       &:hover {
         background-color: hsl(var(--color-orange));
         color: hsl(var(--color-bubble));
@@ -148,6 +180,13 @@
     @media (min-width: 500px) {
       font-size: 1.8rem;
       margin-block-end: 0.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      padding-block-start: 1.4rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.13em;
+      margin-block-end: 0.3rem;
     }
 
     &:hover {
