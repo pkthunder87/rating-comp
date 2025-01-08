@@ -211,6 +211,10 @@
       margin-block-start: 1.6rem;
       scale: 110%;
     }
+
+    @media (min-width: 1200px) {
+      scale: 100%;
+    }
   }
 
   &__choice {
@@ -233,6 +237,14 @@
       padding-block-start: 0.9rem;
       margin-block-start: 0.5rem;
     }
+
+    @media (min-width: 1200px) {
+      font-size: 1.5rem;
+      padding-inline: 1.8rem;
+      padding-block-start: 0.6rem;
+      padding-block-end: 0.4rem;
+      margin-block-start: 2rem;
+    }
   }
 
   &__title {
@@ -243,6 +255,11 @@
 
     @media (min-width: 500px) {
       font-size: 2.6rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 2.8rem;
+      margin-block-start: 2rem;
     }
   }
 
@@ -255,6 +272,11 @@
 
     @media (min-width: 500px) {
       font-size: 1.8rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.5rem;
+      margin-block-end: 1.8rem;
     }
   }
 }
