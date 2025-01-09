@@ -6,6 +6,7 @@ type RatingProps = {
 };
 
 function Rating({ userRating, setRating }: RatingProps) {
+  // @ts-expect-errors still works
   const handleClick = (event: MouseEvent<HTMLUListElement>) => {
     const target = event.target as HTMLLIElement;
     setRating(Number(target.innerText));
