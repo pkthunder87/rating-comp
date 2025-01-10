@@ -11,7 +11,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Live Site URL: [Github Pages](ReplaceSiteURL)
+- Live Site URL: [Github Pages](https://pk-rating-comp.netlify.app/)
 
 ### Built with
 

@@ -12,7 +12,7 @@ function Attribution() {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://https://github.com/pkthunder87/rating-comp"
+        href="https://github.com/pkthunder87/rating-comp"
       >
         PkThunder.
       </a>
